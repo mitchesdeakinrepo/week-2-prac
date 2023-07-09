@@ -1,0 +1,49 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #3d3a50;
+	justify-content: center;
+}
+h1 {
+	margin: 2px;
+	padding: 20px;
+}
+.color {
+	color: #580ef6;
+}
+ul {
+	margin: 0;
+	padding: 50px;
+	display: flex;
+	flex-direction: row;
+}
+ul li {
+	list-style: none;
+	font-family: Arial;
+	font-size: 3em;
+	text-shadow: none;
+}
+.glow {
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-name: glow;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-iteration-count: infinite;
+	animation-duration: 1.5s;
+	animation-name: glow;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+#C {
+	font-size: 50px;
+}
+
+@keyframes glow {
+	from {
+		text-shadow: 0 0 7px #580ef6, 0 0 20px #580ef6, 0 0 30px #580ef6,
+			0 0 40px #580ef6, 0 0 50px #580ef6, 0 0 60px #580ef6;
+	}
+	to {
+		text-shadow: 0 0 7px #0ef6cc, 0 0 20px #0ef6cc,
+			0 0 30px #0ef6cc 0 0 40px #0ef6cc, 0 0 50px #0ef6cc, 0 0 60px #0ef6cc;
+	}
+}
